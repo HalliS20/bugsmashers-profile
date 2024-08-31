@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Board</title>
+	</head>
+	<body>
+		<h1>XMDP Example: Board Metadata</h1>
 
-</body>
+		<div id="book-profile">
+			<h2>Board Metadata Profile</h2>
+			<dl class="profile">
+				<dt id="class-note">class="note"</dt>
+				<dd>An element representing the note</dd>
+
+				<dt id="class-title">class="title"</dt>
+				<dd>The title of the note</dd>
+
+				<dt id="class-description">class="description"</dt>
+				<dd>The description on the note</dd>
+
+                <dt id="class-section">class="section"</dt>
+                <dd> section the note is in</dd>
+
+				<dt id="class-assigned">class="assigned"</dt>
+				<dd> person assigned for the note</dd>
+
+				<dt id="rel-move-forward">rel="move note forward"</dt>
+				<dd>A link to move the note to next section</dd>
+
+                <dt id="rel-move-backward">rel="move note backward"</dt>
+                <dd>A link to move the note to next previous section</dd>
+			</dl>
+		</div>
+
+        <h2>Note information</h2>
+
+        <div class="note">
+            <h3 class="title">Note Title</h3>
+            <p class="description">Note Description</p>
+            <p class="section">Note Section</p>
+            <p class="assigned">Note Assigned</p>
+            <div>
+                <a rel="move note forward" href="move-forward.html">Move Note Forward</a>
+            </div>
+            <div>
+                <a rel="move note backward" href="move-backward.html">Move Note Backward</a>
+            </div>
+        </div>
+	</body>
 </html>
