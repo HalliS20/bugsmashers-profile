@@ -1,0 +1,74 @@
+{
+  "collection": {
+    "version": "1.0",
+    "href": "http://example.com/board/",
+    
+    "links": [
+      {"rel": "self", "href": "http://example.com/board/"}
+    ],
+    
+    "items": [
+      {
+        "href": "http://example.com/board/backlog",
+        "data": [
+          {"name": "section", "value": "backlog", "prompt": "Backlog"}
+        ],
+        "links": [
+          {"rel": "notes", "href": "http://example.com/board/backlog/notes", "prompt": "Backlog Notes"}
+        ]
+      },
+      {
+        "href": "http://example.com/board/working",
+        "data": [
+          {"name": "section", "value": "working", "prompt": "Working"}
+        ],
+        "links": [
+          {"rel": "notes", "href": "http://example.com/board/working/notes", "prompt": "Working Notes"}
+        ]
+      },
+      {
+        "href": "http://example.com/board/done",
+        "data": [
+          {"name": "section", "value": "done", "prompt": "Done"}
+        ],
+        "links": [
+          {"rel": "notes", "href": "http://example.com/board/done/notes", "prompt": "Done Notes"}
+        ]
+      }
+    ],
+    
+    "queries": [
+      {
+        "rel": "search",
+        "href": "http://example.com/board/search",
+        "prompt": "Search Notes",
+        "data": [
+          {"name": "query", "value": ""}
+        ]
+      }
+    ],
+    
+    "template": {
+      "data": [
+        {"name": "title", "value": "", "prompt": "Note Title"},
+        {"name": "description", "value": "", "prompt": "Note Description"},
+        {"name": "section", "value": "", "prompt": "Section (backlog, working, done)"},
+        {"name": "assigned_to", "value": "", "prompt": "Assigned To"}
+      ]
+    }
+  }
+}
+
+
+{
+  "href": "http://example.com/board/backlog/notes/1",
+  "data": [
+    {"name": "title", "value": "Implement login", "prompt": "Note Title"},
+    {"name": "description", "value": "Create login functionality", "prompt": "Note Description"},
+    {"name": "section", "value": "backlog", "prompt": "Section"},
+    {"name": "assigned_to", "value": "John Doe", "prompt": "Assigned To"}
+  ],
+  "links": [
+    {"rel": "move", "href": "http://example.com/board/move-note", "prompt": "Move Note"}
+  ]
+}
